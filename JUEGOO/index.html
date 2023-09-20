@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <style>
+
+    body{
+        padding: 3rem;
+        background-color: blueviolet;
+
+    }
+    div{
+        text-align: center;
+        padding: 1rem;
+    }
+    label {
+        flex: 1; /* Toma todo el espacio disponible */
+        margin-right: 10px; /* Espaciado derecho entre etiqueta y elemento */
+    }
+
+    /* Estilo para los elementos de entrada y select */
+    input, select {
+        flex: 1; /* Toma el doble de espacio que las etiquetas */
+        height: 30px;
+        font-size: 18px;
+    }
+    /* Estilo para el elemento select */
+    
+    .form-group {
+        display: flex;
+        align-items: center; /* Centra verticalmente los elementos */
+        margin-bottom: 10px; /* Espaciado inferior entre elementos */
+    }
+  </style>
+
+</head>
+<body>
+    <h1>Juego de Piedra, Papel o Tijeras</h1>
+    <label for="sel">Selecciona tu jugada:</label>
+    <select id="sel">
+        <option value="piedra">Piedra</option>
+        <option value="papel">Papel</option>
+        <option value="tijeras">Tijeras</option>
+    </select>
+    <button onclick="ganador()">Jugar</button>
+    <script src="main.js"></script>
+    <ul>
+        <li>
+            <a href="../index.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Regresar</a>
+        </li>
+    </ul>
+
+</body>
+</html>
